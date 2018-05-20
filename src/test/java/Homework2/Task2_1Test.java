@@ -10,8 +10,10 @@ import static org.junit.Assert.*;
 /**
  * Created by Евгений on 19.05.2018.
  */
+
 @RunWith(JUnit4.class)
 public class Task2_1Test {
+
     private Task2_1 task;
 
     @Before
@@ -21,9 +23,21 @@ public class Task2_1Test {
 
     @Test
     public void testPalindromeOutputHappyPath() {
+
         String expected = "Is palindrome";
         String actual = task.palindrome("Madam");
 
         assertEquals(expected, actual);
     }
+
+
+    @Test(expected = NullPointerException.class)
+    public void testPalindromeIncorrectInput() {
+
+        String word = null;
+
+        task.palindrome(word);
+    }
+
+
 }

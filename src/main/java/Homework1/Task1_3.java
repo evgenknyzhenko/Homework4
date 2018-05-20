@@ -3,8 +3,11 @@ package Homework1;
 /**
  * Created by Евгений on 19.05.2018.
  */
+
 public class Task1_3 {
+
     public void ranges(int length, int[] values) {
+
         System.out.print("[" + values[0]);
 
         for (int i = 1; i < length - 1; i++) {

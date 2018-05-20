@@ -5,8 +5,10 @@ import java.util.Stack;
 /**
  * Created by Евгений on 19.05.2018.
  */
+
 public class Task3_2 {
-    public String BracketValidation(String input) {
+
+    public String bracketValidation(String input) {
 
         String result;
         Stack<Character> stack = new Stack<>();
@@ -15,7 +17,7 @@ public class Task3_2 {
             case ')':
             case ']':
             case '}':
-                result ="input isn,t correct";
+                result = "input isn,t correct";
                 return result;
         }
 
@@ -23,7 +25,7 @@ public class Task3_2 {
             case '(':
             case '[':
             case '{':
-                result ="input isn,t correct";
+                result = "input isn,t correct";
                 return result;
         }
 
@@ -41,10 +43,11 @@ public class Task3_2 {
                 stack.pop();
 
             } else {
-                result ="input isn,t correct";
+                result = "input isn,t correct";
                 return result;
             }
         }
+
         result = "input is correct";
         return result;
     }

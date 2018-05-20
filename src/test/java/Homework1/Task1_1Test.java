@@ -10,8 +10,10 @@ import static org.junit.Assert.*;
 /**
  * Created by Евгений on 19.05.2018.
  */
+
 @RunWith(JUnit4.class)
 public class Task1_1Test {
+
     private Task1_1 task;
 
     @Before
@@ -21,10 +23,10 @@ public class Task1_1Test {
 
     @Test
     public void testArrayRotationInputHappyPath() {
+
         int length = 5;
         int moveElements = 2;
         int[] values = {5, 6, 1, 2, 6};
-
 
         int[] expectedResult = {1, 2, 6, 5, 6};
         int[] actualResult = task.arrayRotation(length, moveElements, values);
@@ -32,8 +34,10 @@ public class Task1_1Test {
         assertArrayEquals(expectedResult, actualResult);
     }
 
+
     @Test(expected = IndexOutOfBoundsException.class)
     public void testArrayRotationIncorrectIndex() {
+
         int length = 5;
         int moveElements = 6;
         int[] values = {5, 6, 1, 2, 6};

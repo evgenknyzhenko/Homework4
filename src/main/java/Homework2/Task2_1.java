@@ -3,8 +3,11 @@ package Homework2;
 /**
  * Created by Евгений on 19.05.2018.
  */
+
 public class Task2_1 {
+
     public String palindrome(String word) {
+
         char[] chars = word.toLowerCase().toCharArray();
         int length = chars.length;
         String result = "Is palindrome";

@@ -1,10 +1,9 @@
 package Homework1;
 
-import java.util.Scanner;
-
 /**
  * Created by Евгений on 19.05.2018.
  */
+
 public class Task1_1 {
 
     public int[] arrayRotation(int length, int moveElements, int[] values) {

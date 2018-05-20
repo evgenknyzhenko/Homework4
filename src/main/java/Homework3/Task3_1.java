@@ -3,8 +3,11 @@ package Homework3;
 /**
  * Created by Евгений on 19.05.2018.
  */
+
 public class Task3_1 {
-    public StringBuilder UnixPath(StringBuilder input){
+
+    public StringBuilder unixPath(StringBuilder input) {
+
         int i;
 
         while ((i = input.indexOf("/./")) != -1) {

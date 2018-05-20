@@ -3,8 +3,11 @@ package Homework2;
 /**
  * Created by Евгений on 19.05.2018.
  */
+
 public class Task2_3 {
-    public int FrequencyOfChar(String str, char ch){
+
+    public int frequencyOfChar(String str, char ch) {
+
         int countChar = 0;
 
         for (int i = 0; i < str.length(); i++) {
@@ -12,6 +15,7 @@ public class Task2_3 {
                 countChar++;
             }
         }
+
         return countChar;
     }
 

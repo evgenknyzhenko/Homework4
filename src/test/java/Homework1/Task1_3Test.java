@@ -16,11 +16,13 @@ import java.io.PrintStream;
 
 @RunWith(JUnit4.class)
 public class Task1_3Test {
+
     private ByteArrayOutputStream output = new ByteArrayOutputStream();
     private Task1_3 task;
 
     @Before
     public void init() {
+
         task = new Task1_3();
         System.setOut(new PrintStream(output));
     }
@@ -32,6 +34,7 @@ public class Task1_3Test {
 
     @Test
     public void testRengesOutputHappyPath() {
+
         int length = 11;
         int[] values = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15, 16};
         String expected = "[1 3][5][8 10][13 16]";
@@ -43,10 +46,12 @@ public class Task1_3Test {
     }
 
 
-    @Test(expected = IndexOutOfBoundsException.class)
-    public void tes() {
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    public void testRengesIncorrectLength() {
+
         int length = -11;
         int[] values = {1, 2, 3, 5, 8, 9, 10, 13, 14, 15, 16};
+
         task.ranges(length, values);
     }
 }
